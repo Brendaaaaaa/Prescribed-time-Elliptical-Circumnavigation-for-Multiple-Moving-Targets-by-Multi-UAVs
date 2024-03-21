@@ -18,10 +18,11 @@ end
 % 偏航转化
 if psi>pi
     psi=psi-2*pi;
-    if psi<-pi
-        psi=psi+2*pi;
-    end
 end
+if psi<-pi
+    psi=psi+2*pi;
+end
+
 if psi>pi/2
     psi=pi/2;
 end
